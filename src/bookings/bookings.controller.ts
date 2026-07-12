@@ -19,6 +19,7 @@ import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
 export class BookingsController {
   constructor(private readonly bookingsService: BookingsService) {}
 
+  //extract the query parameters
   @Get()
   @UseGuards(JwtAuthGuard)
   @ApiBearerAuth()

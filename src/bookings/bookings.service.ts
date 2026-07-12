@@ -57,6 +57,7 @@ export class BookingsService {
     return this.bookingRepository.save(booking);
   }
 
+  //modify to support pagination and filtering
   async findAll(queryDto: BookingQueryDto) {
     const { search, status } = queryDto;
     const page = queryDto.page ?? 1;
