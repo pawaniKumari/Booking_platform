@@ -11,16 +11,16 @@ import { ApiProperty } from '@nestjs/swagger';
 import { BookingStatus } from '../entities/booking.entity';
 
 export class CreateBookingDto {
-  @ApiProperty({ example: 'John Doe' })
+  @ApiProperty({ example: 'nimal' })
   @IsString()
   @IsNotEmpty()
   customerName: string;
 
-  @ApiProperty({ example: 'john.doe@gmail.com' })
+  @ApiProperty({ example: 'nimal@gmail.com' })
   @IsEmail()
   customerEmail: string;
 
-  @ApiProperty({ example: '+1234567890' })
+  @ApiProperty({ example: '+9412345678' })
   @IsString()
   @IsNotEmpty()
   customerPhone: string;
