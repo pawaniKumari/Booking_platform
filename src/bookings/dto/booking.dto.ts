@@ -16,7 +16,7 @@ export class CreateBookingDto {
   @IsNotEmpty()
   customerName: string;
 
-  @ApiProperty({ example: 'nimal@gmail.com' })
+  @ApiProperty({ example: 'nimal123@gmail.com' })
   @IsEmail()
   customerEmail: string;
 

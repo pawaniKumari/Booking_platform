@@ -10,7 +10,7 @@ import {
 } from '@nestjs/common';
 import { BookingsService } from './bookings.service';
 import { CreateBookingDto, UpdateStatusDto } from './dto/booking.dto';
-import { BookingQueryDto } from './dto/booking-query.dto'; // Clean split! Imported from your separate query file
+import { BookingQueryDto } from './dto/booking-query.dto';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { ApiTags, ApiOperation, ApiBearerAuth } from '@nestjs/swagger';
 

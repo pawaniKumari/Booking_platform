@@ -21,7 +21,7 @@ export class AuthController {
   @Post('refresh')
   @ApiOperation({
     summary:
-      'Renew structural access token validation utilizing current active Refresh Token',
+      'Renew access token validation using current active Refresh Token',
   })
   refresh(@Body() refreshTokenDto: RefreshTokenDto) {
     return this.authService.refresh(refreshTokenDto);

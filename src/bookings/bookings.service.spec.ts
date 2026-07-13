@@ -45,7 +45,7 @@ describe('BookingsService Unit Tests', () => {
       customerEmail: 'test@en2h.com',
       customerPhone: '+12345',
       serviceId: 'some-service-id',
-      bookingDate: '2020-01-01', // Explicitly historical
+      bookingDate: '2020-01-01',
       bookingTime: '12:00',
     };
 
@@ -63,7 +63,7 @@ describe('BookingsService Unit Tests', () => {
       customerEmail: 'test@en2h.com',
       customerPhone: '+12345',
       serviceId: 'active-service-id',
-      bookingDate: '2026-12-25', // Future parameters
+      bookingDate: '2026-12-25', 
       bookingTime: '14:00',
     };
 
