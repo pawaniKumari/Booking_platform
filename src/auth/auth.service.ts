@@ -32,6 +32,7 @@ export class AuthService {
     return { message: 'Registration successful' };
   }
 
+  //token creation and refresh logic
   async login(authDto: AuthDto) {
   const { email, password } = authDto;
   const user = await this.userRepository.findOne({ where: { email } });

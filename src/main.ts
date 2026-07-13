@@ -7,7 +7,7 @@ import { GlobalExceptionFilter } from './common/filters/http-exception.filter';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   
-  //Enable Global Exception Filter
+  //Global Exception Filter
   app.useGlobalFilters(new GlobalExceptionFilter());
 
   // Enable Global Validation

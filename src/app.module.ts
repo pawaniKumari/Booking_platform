@@ -36,7 +36,7 @@ import { BookingsModule } from './bookings/bookings.module';
         password: configService.get<string>('DB_PASSWORD'),
         database: configService.get<string>('DB_DATABASE'),
         autoLoadEntities: true,
-        synchronize: true, // Note: Set to false in production!
+        synchronize: true, // Set to false in production
       }),
     }),
     AuthModule,
